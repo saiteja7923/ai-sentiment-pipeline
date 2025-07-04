@@ -2,21 +2,6 @@
 
 This project collects, cleans, analyzes, and visualizes real-time tweets related to **Artificial Intelligence (AI)** using Python. It automatically fetches new tweets every day and updates the sentiment dashboard.
 
-## Workflow Overview
-main.py
-│
-├── src/
-│ ├── ingest.py # Pulls new tweets using Twitter API
-│ ├── clean.py # Cleans and preprocesses tweet text
-│ └── analyze_sentiment.py # Performs sentiment analysis using NLTK's VADER
-│
-├── data/
-│ ├── tweets.csv # Raw tweets
-│ ├── clean_tweets.csv # Cleaned text
-│ └── tweets_with_sentiment.csv # Final output with sentiment
-│
-└── streamlit_app.py # Interactive dashboard with filters and visualizations
-
 ## Features
 
 - Fetches tweets related to `"artificial intelligence"`, `"generative AI"`, or `#AI`
@@ -27,3 +12,5 @@ main.py
   - Sentiment breakdown chart
   - Filtered tweet viewer
   - Word cloud
+![Screenshot 2025-07-04 175437](https://github.com/user-attachments/assets/1ed1889b-9bf1-4a81-bfea-025a32fb69e4)
+![Screenshot 2025-07-04 175508](https://github.com/user-attachments/assets/e9230b22-296f-40cb-aa9f-cb908eb25c64)
