@@ -42,7 +42,9 @@ if not df.empty:
     sentiment_counts = filtered_df["sentiment"].value_counts().sort_index()
 
     fig, ax = plt.subplots()
-    sns.barplot(x=sentiment_counts.index, y=sentiment_counts.values, palette="coolwarm", ax=ax)
+    sentiment_df = sentiment_counts.reset_index()
+    sentiment_df.columns = ['sentiment', 'count']
+    sns.barplot(data=sentiment_df, x="sentiment", y="count", hue="sentiment", palette="coolwarm", legend=False, ax=ax)
     ax.set_ylabel("Number of Tweets")
     ax.set_xlabel("Sentiment")
     ax.set_ylim(0, max(sentiment_counts.values) * 1.1)  # add some padding on y-axis
