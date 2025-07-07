@@ -6,13 +6,13 @@ from src.analyze_sentiment import analyze_sentiment
 query = '"artificial intelligence" OR "generative AI" OR #AI lang:en -is:retweet'
 
 def main():
-    print("\n📥 Starting tweet ingestion...")
+    print("\nStarting tweet ingestion...")
     fetch_tweets(query=query, max_results=10)
 
-    print("\n🧹 Cleaning tweets...")
+    print("\nCleaning tweets...")
     clean_tweets_from_csv()
 
-    print("\n🧠 Running sentiment analysis...")
+    print("\nRunning sentiment analysis...")
     analyze_sentiment()
 
 if __name__ == "__main__":
