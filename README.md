@@ -5,7 +5,7 @@ This **end-to-end** project collects, cleans, analyzes, and visualizes real-time
 ## Features
 
 - Fetches tweets related to `"artificial intelligence"`, `"generative AI"`, or `#AI`
-- Automatically deduplicates previously seen tweets
+- Automatically deduplicates previously seen tweets on Twitter
 - Cleans tweet content using regex
 - Applies sentiment analysis using VADER (Positive, Neutral, Negative)
 - Visualizes results in a Streamlit dashboard with:
