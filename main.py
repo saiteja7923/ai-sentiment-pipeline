@@ -3,7 +3,7 @@ from src.clean import clean_tweets_from_csv
 from src.analyze_sentiment import analyze_sentiment
 
 # Define the smart query globally
-query = '"artificial intelligence" OR "generative AI" OR #AI lang:en -is:retweet'
+query = '"artificial intelligence" OR "generative AI" OR #AI lang:en -is:retweet' #tweet
 
 def main():
     print("\nStarting tweet ingestion...")
