@@ -1,6 +1,7 @@
 # AI Tweet Sentiment Pipeline
 
 This **end-to-end** project collects, cleans, analyzes, and visualizes real-time tweets related to **Artificial Intelligence (AI)** using Python. It **automatically fetches new tweets every day** and updates the sentiment dashboard.
+This project is used to practice Visual Studio, Git, and GitHub workflows.
 
 ## Features
 
